@@ -89,3 +89,5 @@ Pipfile.lock
 # Cursor specific files
 .cursorignore
 .cursorrules
+d2l-practice-torch/src/__pycache__/utilities.cpython-39.pyc
+d2l-practice-torch/src/__pycache__/data.cpython-39.pyc
