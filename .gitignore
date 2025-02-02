@@ -1,0 +1,91 @@
+# Python related ignores
+# Ignore Python bytecode files and compilation artifacts
+__pycache__/          # Python's bytecode cache directory
+*.py[cod]             # Python compiled files (.pyc, .pyo, .pyd)
+*$py.class           # Python optimized bytecode
+*.so                 # Compiled shared objects (usually C extensions)
+.Python              # Python virtual environment marker
+develop-eggs/        # Development eggs directory
+dist/                # Distribution directory
+downloads/           # Downloaded dependencies
+eggs/                # Python eggs directory
+.eggs/               # Temporary egg directory
+lib/                 # Library directory
+lib64/               # 64-bit library directory
+parts/               # Installation parts
+sdist/               # Source distribution
+var/                 # Variable directory
+wheels/              # Python wheels directory
+*.egg-info/          # Egg metadata directory
+.installed.cfg       # Installation configuration
+*.egg                # Python egg packages
+
+# Jupyter related ignores
+# Prevent version control of Jupyter notebook checkpoints and metadata
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_metadata
+.jupyter/
+
+# PyTorch specific ignores
+# Ignore model weights and checkpoint files
+*.pth                # PyTorch model weights
+*.pt                 # PyTorch model weights (alternative extension)
+*.ckpt               # Checkpoint files
+*.safetensors        # Optimized tensor storage format
+model_weights/       # Directory for model weights
+checkpoints/         # Checkpoint directory
+runs/                # Training run outputs
+.pytorch_cache/      # PyTorch cache
+
+# Data file ignores
+# Prevent large data files from being tracked
+data/                # Main data directory
+datasets/            # Dataset directory
+raw_data/            # Raw data files
+processed_data/      # Processed data files
+*.csv                # CSV files
+*.json               # JSON files
+*.h5                 # HDF5 files
+*.npy                # NumPy array files
+*.npz                # NumPy compressed files
+*.pkl                # Pickle files
+*.db                 # Database files
+*.sqlite             # SQLite database files
+
+# Logs and outputs
+logs/
+output/
+results/
+tensorboard/
+wandb/
+mlruns/
+lightning_logs/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+.conda/
+*.conda
+environment.yml
+Pipfile.lock
+
+# OS specific
+.DS_Store
+
+# Cursor specific files
+.cursorignore
+.cursorrules
