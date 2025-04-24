@@ -24,6 +24,20 @@ class SyntheticRegressionData(DataModule):  #@save
     """Synthetic data for linear regression."""
     def __init__(self, w, b, noise=0.01, num_train=1000, num_val=1000,
                  batch_size=32):
+        """Initialize synthetic regression data.
+        
+        Args:
+            w (torch.Tensor): Weight vector for generating synthetic data
+            b (float): Bias term for generating synthetic data  
+            noise (float, optional): Standard deviation of Gaussian noise. Defaults to 0.01
+            num_train (int, optional): Number of training examples. Defaults to 1000
+            num_val (int, optional): Number of validation examples. Defaults to 1000
+            batch_size (int, optional): Batch size for data loading. Defaults to 32
+            
+        The synthetic data is generated according to: y = Xw + b + noise
+        where X is randomly sampled from a standard normal distribution
+        and noise is sampled from N(0, noise^2)
+        """
         super().__init__()
         self.save_hyperparameters()
         n = num_train + num_val
